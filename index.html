@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <title>OpenED</title>
+    </head>
+    <body>
+        <div class="left-split" id="left">
+            <h1 id="title">OpenED</h1>
+            <input id="next" type="button" value="Get started" onclick="showSignup();">
+        </div>
+
+        <div class="right-split" id="right">
+            <div class="form" id="signup">
+                <h2>Sign Up</h2> 
+                <input type="text" name="name" placeholder="Name" id="name"> <br>
+                <input type="text" name="email" placeholder="Email" id="email"> <br>
+                <input type="button" value="Create Account" id="submit" onclick="createAccount(document.getElementById('name').value, document.getElementById('email').value);">
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </body>
+</html>
