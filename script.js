@@ -45,7 +45,7 @@ const createAccount = (name, email) => {
         document.getElementById("left").style.width = "0";
 
         setTimeout(function(){ 
-            window.location = "dashboard/index.html";
+            window.location = "dashboard";
         }, 1000);
     }
 }
