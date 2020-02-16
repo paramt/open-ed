@@ -64,15 +64,29 @@ body {
 
 .upvote {
     border-radius: var(--border-radius) 0 0 0;
+    background-color: #013000;
+}
+
+.upvote:hover {
+    background-color: #03a300;
+    cursor: pointer;
+}
+
+.upvoted {
     background-color: #028200;
 }
 
 .downvote {
     border-radius: 0 0 0 var(--border-radius);
-    background-color: #820000;
+    background-color: #330000;
 }
 
-.vote button:hover {
-    background-color: gray;
+
+.downvote:hover {
+    background-color: #ab0000;
     cursor: pointer;
+}
+
+.downvoted {
+    background-color: #820000;
 }

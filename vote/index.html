@@ -23,29 +23,38 @@
 
         <div class="suggestion">
             <div class="vote">
-                <button class="upvote"><i class="fas fa-chevron-up icon"></i></button>
-                <div class="count">0</div>
-                <button class="downvote"><i class="fas fa-chevron-down icon"></i></button>
+                <button id="u1" class="upvote" onclick="upvote('s1', this, document.getElementById('d1'))"><i class="fas fa-chevron-up icon"></i></button>
+                <div id="s1" class="count">36</div>
+                <button id="d1" class="downvote" onclick="downvote('s1', this, document.getElementById('u1'))"><i class="fas fa-chevron-down icon"></i></button>
             </div>
-            <div class="description">The school grad trip should be Cuba.</div>
+            <div class="description">The school grad trip should be to Cuba</div>
         </div>
 
         <div class="suggestion">
             <div class="vote">
-                <button class="upvote"><i class="fas fa-chevron-up icon"></i></button>
-                <div class="count">56</div>
-                <button class="downvote"><i class="fas fa-chevron-down icon"></i></button>
+                <button id="u2" class="upvote" onclick="upvote('s2', this, document.getElementById('d2'))"><i class="fas fa-chevron-up icon"></i></button>
+                <div id="s2" class="count">19</div>
+                <button id="d2" class="downvote" onclick="downvote('s2', this, document.getElementById('u2'))"><i class="fas fa-chevron-down icon"></i></button>
             </div>
-            <div class="description">We should have a new class president.</div>
+            <div class="description">We should elect a new class president</div>
         </div>
 
         <div class="suggestion">
             <div class="vote">
-                <button class="upvote"><i class="fas fa-chevron-up icon"></i></button>
-                <div class="count">56</div>
-                <button class="downvote"><i class="fas fa-chevron-down icon"></i></button>
+                <button id="u3" class="upvote" onclick="upvote('s3', this, document.getElementById('d3'))"><i class="fas fa-chevron-up icon"></i></button>
+                <div id="s3" class="count">0</div>
+                <button id="d3" class="downvote" onclick="downvote('s3', this, document.getElementById('u3'))"><i class="fas fa-chevron-down icon"></i></button>
             </div>
-            <div class="description">School should start later.</div>
+            <div class="description">School should start later</div>
+        </div>
+
+        <div class="suggestion">
+            <div class="vote">
+                <button id="u4" class="upvote" onclick="upvote('s4', this, document.getElementById('d4'))"><i class="fas fa-chevron-up icon"></i></button>
+                <div id="s4" class="count">-16</div>
+                <button id="d4" class="downvote" onclick="downvote('s4', this, document.getElementById('u4'))"><i class="fas fa-chevron-down icon"></i></button>
+            </div>
+            <div class="description">School should start earlier</div>
         </div>
 
         <script src="script.js"></script>
